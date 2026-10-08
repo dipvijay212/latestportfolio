@@ -1,0 +1,96 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="16" fill="#F8FAFC"/>
+  
+  <!-- Browser Frame Header -->
+  <rect width="800" height="42" fill="#0F172A"/>
+  <circle cx="24" cy="21" r="5" fill="#EF4444"/>
+  <circle cx="40" cy="21" r="5" fill="#F59E0B"/>
+  <circle cx="56" cy="21" r="5" fill="#10B981"/>
+  <rect x="80" y="10" width="300" height="22" rx="6" fill="#1E293B"/>
+  <text x="96" y="25" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11" font-weight="500">tuitionportal.admin/students</text>
+  
+  <!-- Navigation Header -->
+  <rect x="24" y="58" width="752" height="46" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="44" y="86" fill="#0F172A" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Apex Coaching Academy</text>
+  <rect x="235" y="70" width="80" height="22" rx="4" fill="#EEF2FF"/>
+  <text x="245" y="85" fill="#4F46E5" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Grade 10 &amp; 12</text>
+  <rect x="625" y="68" width="135" height="26" rx="6" fill="#25D366"/>
+  <text x="638" y="85" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="600">+ WhatsApp Broadcast</text>
+
+  <!-- Metric Summary Cards -->
+  <g transform="translate(24, 116)">
+    <!-- Metric 1 -->
+    <rect width="176" height="74" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="16" y="30" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" font-weight="500">ENROLLED STUDENTS</text>
+    <text x="16" y="58" fill="#0F172A" font-family="system-ui, sans-serif" font-size="22" font-weight="700">142</text>
+
+    <!-- Metric 2 -->
+    <rect x="192" width="176" height="74" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="208" y="30" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" font-weight="500">ACTIVE BATCHES</text>
+    <text x="208" y="58" fill="#4F46E5" font-family="system-ui, sans-serif" font-size="22" font-weight="700">8 Batches</text>
+
+    <!-- Metric 3 -->
+    <rect x="384" width="176" height="74" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="400" y="30" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" font-weight="500">TODAY ATTENDANCE</text>
+    <text x="400" y="58" fill="#16A34A" font-family="system-ui, sans-serif" font-size="22" font-weight="700">96.4%</text>
+
+    <!-- Metric 4 -->
+    <rect x="576" width="176" height="74" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="592" y="30" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" font-weight="500">PENDING DUES</text>
+    <text x="592" y="58" fill="#DC2626" font-family="system-ui, sans-serif" font-size="22" font-weight="700">12 Accounts</text>
+  </g>
+
+  <!-- Student Record Data Table -->
+  <g transform="translate(24, 206)">
+    <rect width="752" height="270" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    
+    <!-- Table Header -->
+    <rect width="752" height="36" rx="8" fill="#F8FAFC"/>
+    <text x="20" y="23" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" font-weight="600">STUDENT NAME</text>
+    <text x="200" y="23" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" font-weight="600">BATCH</text>
+    <text x="340" y="23" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" font-weight="600">ATTENDANCE</text>
+    <text x="470" y="23" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" font-weight="600">FEE STATUS</text>
+    <text x="610" y="23" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" font-weight="600">ACTION</text>
+
+    <!-- Row 1 -->
+    <text x="20" y="65" fill="#0F172A" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Aarav Sharma</text>
+    <text x="200" y="65" fill="#475569" font-family="system-ui, sans-serif" font-size="12">Class 10 - Mathematics</text>
+    <rect x="340" y="52" width="60" height="20" rx="4" fill="#DCFCE7"/>
+    <text x="350" y="66" fill="#15803D" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Present</text>
+    <rect x="470" y="52" width="55" height="20" rx="4" fill="#DCFCE7"/>
+    <text x="484" y="66" fill="#15803D" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Paid</text>
+    <text x="610" y="65" fill="#4F46E5" font-family="system-ui, sans-serif" font-size="11" font-weight="600">View Receipt</text>
+    <line x1="20" y1="84" x2="732" y2="84" stroke="#F1F5F9"/>
+
+    <!-- Row 2 -->
+    <text x="20" y="115" fill="#0F172A" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Diya Patel</text>
+    <text x="200" y="115" fill="#475569" font-family="system-ui, sans-serif" font-size="12">Class 12 - Physics</text>
+    <rect x="340" y="102" width="60" height="20" rx="4" fill="#DCFCE7"/>
+    <text x="350" y="116" fill="#15803D" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Present</text>
+    <rect x="470" y="102" width="70" height="20" rx="4" fill="#FEE2E2"/>
+    <text x="480" y="116" fill="#B91C1C" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Due (₹3,500)</text>
+    <rect x="610" y="100" width="110" height="24" rx="4" fill="#25D366"/>
+    <text x="620" y="116" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="700">Send WhatsApp</text>
+    <line x1="20" y1="134" x2="732" y2="134" stroke="#F1F5F9"/>
+
+    <!-- Row 3 -->
+    <text x="20" y="165" fill="#0F172A" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Rohan Verma</text>
+    <text x="200" y="165" fill="#475569" font-family="system-ui, sans-serif" font-size="12">Class 10 - Science</text>
+    <rect x="340" y="152" width="60" height="20" rx="4" fill="#FEF3C7"/>
+    <text x="353" y="166" fill="#B45309" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Absent</text>
+    <rect x="470" y="152" width="55" height="20" rx="4" fill="#DCFCE7"/>
+    <text x="484" y="166" fill="#15803D" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Paid</text>
+    <rect x="610" y="150" width="110" height="24" rx="4" fill="#F1F5F9"/>
+    <text x="626" y="166" fill="#475569" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Notify Parent</text>
+    <line x1="20" y1="184" x2="732" y2="184" stroke="#F1F5F9"/>
+
+    <!-- Row 4 -->
+    <text x="20" y="215" fill="#0F172A" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Ananya Roy</text>
+    <text x="200" y="215" fill="#475569" font-family="system-ui, sans-serif" font-size="12">Class 12 - Chemistry</text>
+    <rect x="340" y="202" width="60" height="20" rx="4" fill="#DCFCE7"/>
+    <text x="350" y="216" fill="#15803D" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Present</text>
+    <rect x="470" y="202" width="55" height="20" rx="4" fill="#DCFCE7"/>
+    <text x="484" y="216" fill="#15803D" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Paid</text>
+    <text x="610" y="215" fill="#4F46E5" font-family="system-ui, sans-serif" font-size="11" font-weight="600">View Receipt</text>
+  </g>
+</svg>

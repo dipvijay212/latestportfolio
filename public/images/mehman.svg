@@ -1,0 +1,80 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="16" fill="#F8FAFC"/>
+  
+  <!-- Browser Frame Header -->
+  <rect width="800" height="42" fill="#0F172A"/>
+  <circle cx="24" cy="21" r="5" fill="#EF4444"/>
+  <circle cx="40" cy="21" r="5" fill="#F59E0B"/>
+  <circle cx="56" cy="21" r="5" fill="#10B981"/>
+  <rect x="80" y="10" width="300" height="22" rx="6" fill="#1E293B"/>
+  <text x="96" y="25" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11" font-weight="500">mehman.orderflow.io/pipeline</text>
+  
+  <!-- App Header -->
+  <rect x="24" y="58" width="752" height="46" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="44" y="86" fill="#0F172A" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Mehman WhatsApp Order Flow</text>
+  <rect x="280" y="70" width="135" height="22" rx="4" fill="#DCFCE7"/>
+  <circle cx="292" cy="81" r="3" fill="#15803D"/>
+  <text x="302" y="86" fill="#15803D" font-family="system-ui, sans-serif" font-size="11" font-weight="600">WhatsApp Webhook Active</text>
+  <text x="620" y="86" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">Today&apos;s Orders: 38</text>
+
+  <!-- 3 Kanban Columns for Order Lifecycle -->
+  <!-- Column 1: New Inquiries -->
+  <g transform="translate(24, 116)">
+    <rect width="237" height="360" rx="10" fill="#F1F5F9" stroke="#E2E8F0"/>
+    <text x="16" y="28" fill="#475569" font-family="system-ui, sans-serif" font-size="12" font-weight="700">NEW INQUIRIES (3)</text>
+    
+    <!-- Card 1 -->
+    <rect x="12" y="44" width="213" height="136" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="22" y="56" width="75" height="18" rx="4" fill="#25D366"/>
+    <text x="30" y="69" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="600">+91 9845...21</text>
+    <text x="22" y="94" fill="#0F172A" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Pooja Sharma</text>
+    <text x="22" y="112" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">Items: 2x Silk Saree Set (Catalog #40)</text>
+    <text x="22" y="128" fill="#15803D" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Est. Total: ₹4,800</text>
+    <rect x="22" y="142" width="95" height="24" rx="4" fill="#0F172A"/>
+    <text x="32" y="158" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Confirm Order</text>
+
+    <!-- Card 2 -->
+    <rect x="12" y="190" width="213" height="120" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="22" y="202" width="75" height="18" rx="4" fill="#25D366"/>
+    <text x="30" y="215" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="600">+91 9412...09</text>
+    <text x="22" y="240" fill="#0F172A" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Karan Mehta</text>
+    <text x="22" y="258" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">Inquiry: Price list for bulk cotton</text>
+    <rect x="22" y="274" width="95" height="24" rx="4" fill="#EEF2FF"/>
+    <text x="34" y="290" fill="#4F46E5" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Send Catalog</text>
+  </g>
+
+  <!-- Column 2: In Preparation / Processing -->
+  <g transform="translate(281, 116)">
+    <rect width="237" height="360" rx="10" fill="#F1F5F9" stroke="#E2E8F0"/>
+    <text x="16" y="28" fill="#475569" font-family="system-ui, sans-serif" font-size="12" font-weight="700">PROCESSING &amp; PACKED (4)</text>
+
+    <rect x="12" y="44" width="213" height="140" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="22" y="56" width="70" height="18" rx="4" fill="#FEF3C7"/>
+    <text x="30" y="69" fill="#B45309" font-family="system-ui, sans-serif" font-size="10" font-weight="600">ORDER #408</text>
+    <text x="22" y="94" fill="#0F172A" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Ritu Singhania</text>
+    <text x="22" y="112" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">Packed: 5 boxes gourmet sweets</text>
+    <text x="22" y="128" fill="#15803D" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Payment: UPI Confirmed ✓</text>
+    <rect x="22" y="144" width="105" height="24" rx="4" fill="#4F46E5"/>
+    <text x="30" y="160" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Assign Courier</text>
+
+    <rect x="12" y="194" width="213" height="140" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="22" y="206" width="70" height="18" rx="4" fill="#FEF3C7"/>
+    <text x="30" y="219" fill="#B45309" font-family="system-ui, sans-serif" font-size="10" font-weight="600">ORDER #407</text>
+    <text x="22" y="244" fill="#0F172A" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Deepak Joshi</text>
+    <text x="22" y="262" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">Packed: 12 units dry fruits gift pack</text>
+    <text x="22" y="278" fill="#15803D" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Payment: Net Banking Confirmed</text>
+  </g>
+
+  <!-- Column 3: Dispatched & Delivered -->
+  <g transform="translate(539, 116)">
+    <rect width="237" height="360" rx="10" fill="#F1F5F9" stroke="#E2E8F0"/>
+    <text x="16" y="28" fill="#475569" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DISPATCHED TODAY (12)</text>
+
+    <rect x="12" y="44" width="213" height="130" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="22" y="56" width="90" height="18" rx="4" fill="#DCFCE7"/>
+    <text x="30" y="69" fill="#15803D" font-family="system-ui, sans-serif" font-size="10" font-weight="600">AWB: DTDC-8219</text>
+    <text x="22" y="94" fill="#0F172A" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Simran Kaur</text>
+    <text x="22" y="112" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">Status: In Transit • ETA Today</text>
+    <text x="22" y="128" fill="#25D366" font-family="system-ui, sans-serif" font-size="10" font-weight="600">WhatsApp Tracking Sent ✓</text>
+  </g>
+</svg>

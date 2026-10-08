@@ -1,0 +1,75 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="16" fill="#F1F5F9"/>
+  
+  <!-- Centered Dual Phone Display or Studio Frame -->
+  <rect x="24" y="24" width="752" height="452" rx="12" fill="#0F172A"/>
+
+  <!-- Left: Mobile Try-on Viewport -->
+  <g transform="translate(60, 48)">
+    <rect width="250" height="404" rx="28" fill="#1E293B" stroke="#475569" stroke-width="2"/>
+    <!-- Screen Notch -->
+    <rect x="85" y="8" width="80" height="14" rx="7" fill="#0F172A"/>
+    
+    <!-- Camera Viewport with Silhouette -->
+    <rect x="12" y="32" width="226" height="280" rx="16" fill="#334155"/>
+    <circle cx="125" cy="110" r="32" fill="#64748B"/>
+    <path d="M75 220C75 165 95 155 125 155C155 155 175 165 175 220" fill="#64748B"/>
+    
+    <!-- AI Scan Grid Effect -->
+    <line x1="20" y1="120" x2="230" y2="120" stroke="#818CF8" stroke-dasharray="4 4"/>
+    <line x1="20" y1="170" x2="230" y2="170" stroke="#818CF8" stroke-dasharray="4 4"/>
+    
+    <!-- AI Tracking Points -->
+    <circle cx="105" cy="155" r="4" fill="#38BDF8"/>
+    <circle cx="145" cy="155" r="4" fill="#38BDF8"/>
+    <circle cx="125" cy="190" r="4" fill="#38BDF8"/>
+
+    <!-- Status pill -->
+    <rect x="45" y="44" width="160" height="26" rx="13" fill="#0F172A" opacity="0.85"/>
+    <circle cx="62" cy="57" r="3" fill="#10B981"/>
+    <text x="74" y="61" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="600">AI Pose Alignment: 99%</text>
+
+    <!-- Bottom Controls -->
+    <rect x="12" y="324" width="226" height="66" rx="12" fill="#0F172A"/>
+    <text x="24" y="348" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Oversized Linen Blazer</text>
+    <text x="24" y="364" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="10">Match Score: 96% • Size: Medium</text>
+    <rect x="150" y="338" width="76" height="36" rx="8" fill="#6366F1"/>
+    <text x="165" y="360" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Try On</text>
+  </g>
+
+  <!-- Right: Architecture & Render Specs -->
+  <g transform="translate(350, 48)">
+    <rect width="390" height="404" rx="12" fill="#1E293B" stroke="#334155"/>
+    
+    <text x="24" y="40" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="700">VTryon Neural Pipeline</text>
+    <text x="24" y="58" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Mobile React Native client + Python inference engine</text>
+
+    <!-- Stage 1 -->
+    <rect x="24" y="80" width="342" height="60" rx="8" fill="#0F172A" stroke="#334155"/>
+    <text x="40" y="104" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">01. SEGMENTATION &amp; BODY MAPPING</text>
+    <text x="40" y="124" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Detects 18 keypoints to isolate torso and arm geometry</text>
+
+    <!-- Stage 2 -->
+    <rect x="24" y="152" width="342" height="60" rx="8" fill="#0F172A" stroke="#334155"/>
+    <text x="40" y="176" fill="#818CF8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">02. DRAPING WARP &amp; TEXTURE MAPPING</text>
+    <text x="40" y="196" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Deforms clothing mesh to adhere to user posture &amp; folds</text>
+
+    <!-- Stage 3 -->
+    <rect x="24" y="224" width="342" height="60" rx="8" fill="#0F172A" stroke="#334155"/>
+    <text x="40" y="248" fill="#34D399" font-family="system-ui, sans-serif" font-size="11" font-weight="700">03. NEURAL COMPOSITION (DIFFUSION)</text>
+    <text x="40" y="268" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Blends shadows and lighting for photorealistic output</text>
+
+    <!-- Live Performance Tags -->
+    <rect x="24" y="310" width="105" height="60" rx="8" fill="#0F172A"/>
+    <text x="36" y="334" fill="#64748B" font-family="system-ui, sans-serif" font-size="10">LATENCY</text>
+    <text x="36" y="354" fill="#10B981" font-family="system-ui, sans-serif" font-size="14" font-weight="700">&lt; 1.2s</text>
+
+    <rect x="142" y="310" width="105" height="60" rx="8" fill="#0F172A"/>
+    <text x="154" y="334" fill="#64748B" font-family="system-ui, sans-serif" font-size="10">DEVICE FPS</text>
+    <text x="154" y="354" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="14" font-weight="700">60 FPS</text>
+
+    <rect x="260" y="310" width="105" height="60" rx="8" fill="#0F172A"/>
+    <text x="272" y="334" fill="#64748B" font-family="system-ui, sans-serif" font-size="10">ACCURACY</text>
+    <text x="272" y="354" fill="#818CF8" font-family="system-ui, sans-serif" font-size="14" font-weight="700">98.4%</text>
+  </g>
+</svg>

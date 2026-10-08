@@ -1,0 +1,76 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="#F8FAFC"/>
+  
+  <!-- Browser Frame Header -->
+  <rect width="800" height="42" fill="#0F172A"/>
+  <circle cx="24" cy="21" r="5" fill="#EF4444"/>
+  <circle cx="40" cy="21" r="5" fill="#F59E0B"/>
+  <circle cx="56" cy="21" r="5" fill="#10B981"/>
+  <rect x="80" y="10" width="300" height="22" rx="6" fill="#1E293B"/>
+  <text x="96" y="25" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11" font-weight="500">kunalsarees.com/catalog</text>
+  
+  <!-- Website Header -->
+  <rect x="24" y="58" width="752" height="50" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="44" y="88" fill="#1E293B" font-family="system-ui, sans-serif" font-size="16" font-weight="700">KUNAL SAREES</text>
+  <rect x="175" y="74" width="70" height="20" rx="10" fill="#FEF3C7"/>
+  <text x="187" y="88" fill="#92400E" font-family="system-ui, sans-serif" font-size="10" font-weight="600">WHOLESALE</text>
+  
+  <!-- Navigation Links -->
+  <text x="480" y="87" fill="#64748B" font-family="system-ui, sans-serif" font-size="12">Collections</text>
+  <text x="560" y="87" fill="#64748B" font-family="system-ui, sans-serif" font-size="12">Fabrics</text>
+  <rect x="635" y="69" width="125" height="28" rx="6" fill="#10B981"/>
+  <text x="650" y="87" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="600">WhatsApp Inquiry</text>
+
+  <!-- Filter Bar -->
+  <rect x="24" y="120" width="752" height="38" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="40" y="144" fill="#475569" font-family="system-ui, sans-serif" font-size="11" font-weight="600">FILTER BY:</text>
+  <rect x="110" y="128" width="80" height="22" rx="4" fill="#EEF2FF"/>
+  <text x="122" y="143" fill="#4F46E5" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Banarasi Silk</text>
+  <rect x="200" y="128" width="75" height="22" rx="4" fill="#F1F5F9"/>
+  <text x="214" y="143" fill="#475569" font-family="system-ui, sans-serif" font-size="11">Georgette</text>
+  <rect x="285" y="128" width="70" height="22" rx="4" fill="#F1F5F9"/>
+  <text x="299" y="143" fill="#475569" font-family="system-ui, sans-serif" font-size="11">Chanderi</text>
+  <rect x="365" y="128" width="65" height="22" rx="4" fill="#F1F5F9"/>
+  <text x="379" y="143" fill="#475569" font-family="system-ui, sans-serif" font-size="11">Kanjivaram</text>
+
+  <!-- Product Cards Grid -->
+  <!-- Card 1 -->
+  <g transform="translate(24, 172)">
+    <rect width="237" height="300" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="12" y="12" width="213" height="170" rx="8" fill="#FCE7F3"/>
+    <rect x="24" y="24" width="70" height="20" rx="4" fill="#BE185D"/>
+    <text x="32" y="38" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="600">NEW ARRIVAL</text>
+    <circle cx="118" cy="97" r="40" fill="#F472B6" opacity="0.4"/>
+    <text x="14" y="206" fill="#1E293B" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Royal Banarasi Zari Silk</text>
+    <text x="14" y="224" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">SKU: BNR-2049 • Set of 8 Pcs</text>
+    <rect x="14" y="245" width="209" height="34" rx="6" fill="#25D366"/>
+    <text x="60" y="266" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Order via WhatsApp</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(281, 172)">
+    <rect width="237" height="300" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="12" y="12" width="213" height="170" rx="8" fill="#FEF3C7"/>
+    <rect x="24" y="24" width="75" height="20" rx="4" fill="#B45309"/>
+    <text x="32" y="38" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="600">BESTSELLER</text>
+    <circle cx="118" cy="97" r="40" fill="#FBBF24" opacity="0.4"/>
+    <text x="14" y="206" fill="#1E293B" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Handloom Chanderi Weave</text>
+    <text x="14" y="224" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">SKU: CHN-1082 • Set of 10 Pcs</text>
+    <rect x="14" y="245" width="209" height="34" rx="6" fill="#25D366"/>
+    <text x="60" y="266" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Order via WhatsApp</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(539, 172)">
+    <rect width="237" height="300" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="12" y="12" width="213" height="170" rx="8" fill="#EDE9FE"/>
+    <rect x="24" y="24" width="70" height="20" rx="4" fill="#6D28D9"/>
+    <text x="32" y="38" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="600">EXCLUSIVE</text>
+    <circle cx="118" cy="97" r="40" fill="#A78BFA" opacity="0.4"/>
+    <text x="14" y="206" fill="#1E293B" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Pure Kanjivaram Bridal</text>
+    <text x="14" y="224" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">SKU: KNJ-5012 • Set of 6 Pcs</text>
+    <rect x="14" y="245" width="209" height="34" rx="6" fill="#25D366"/>
+    <text x="60" y="266" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Order via WhatsApp</text>
+  </g>
+</svg>
