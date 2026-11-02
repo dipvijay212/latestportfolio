@@ -10,96 +10,84 @@ export const servicesList: ServiceItem[] = [
   {
     id: "website-development",
     name: "Website Development",
-    description: "Fast, modern, and responsive websites engineered to establish brand credibility and turn visitors into paying clients.",
+    description: "Modern, responsive websites designed to represent your business professionally and provide a smooth experience across mobile, tablet, and desktop.",
     included: [
-      "Custom responsive design (mobile, tablet, desktop)",
-      "SEO best practices for higher Google visibility",
-      "Lead generation contact & consultation forms",
-      "High-speed loading with 95+ Core Web Vitals"
+      "Professional presentation tailored to your business identity",
+      "Seamless responsiveness across mobile, tablet, and desktop",
+      "Fast page loading speeds and search engine optimization (SEO)",
+      "Lead generation contact forms and direct WhatsApp integration"
     ],
     iconName: "Globe"
   },
   {
     id: "full-stack-web-apps",
     name: "Full Stack Web Applications",
-    description: "Complete, scalable web platforms built from the ground up to solve complex business operations and handle user workflows.",
+    description: "Complete web applications with frontend, backend APIs, databases, authentication, dashboards, and the functionality your business needs.",
     included: [
-      "End-to-end database, backend, and frontend",
-      "Secure user authentication & role management",
-      "Interactive customer portals & member areas",
-      "Zero-downtime cloud hosting & maintenance setup"
+      "Custom frontend user interfaces and workflows",
+      "Secure user authentication and role management",
+      "Structured database modeling and backend APIs",
+      "Production-ready deployment and cloud setup"
     ],
     iconName: "Layers"
   },
   {
     id: "ecommerce-development",
     name: "E-commerce Development",
-    description: "High-converting online shopping platforms with frictionless checkout experiences that maximize your store's sales.",
+    description: "Product-focused online stores with responsive interfaces, product management, categories, customer flows, and business-friendly management features.",
     included: [
-      "Streamlined product catalogs & category filtering",
-      "Secure payment processing (Stripe, PayPal, UPI)",
-      "Automated order confirmation & customer invoices",
-      "Mobile-optimized one-click checkout flows"
+      "Intuitive product showcases with category filtering",
+      "Frictionless customer ordering and checkout flows",
+      "Catalog, inventory, and pricing management",
+      "WhatsApp ordering and payment gateway integration"
     ],
     iconName: "ShoppingCart"
   },
   {
     id: "react-nextjs-development",
     name: "React / Next.js Development",
-    description: "Lightning-fast, dynamic web experiences that give your business enterprise-grade performance and instant page navigation.",
+    description: "Fast and modern web applications built with React and Next.js, with a focus on performance, scalability, SEO, and user experience.",
     included: [
-      "Instant page transitions with zero sluggishness",
-      "Server-side rendering for superior search rankings",
-      "Modular, maintainable code for easy future updates",
-      "Pixel-perfect translation from your Figma designs"
+      "Lightning-fast page transitions and interactive interfaces",
+      "Server-side rendering for strong organic search rankings",
+      "Clean, scalable codebase designed for long-term maintainability",
+      "High Core Web Vitals scores and smooth user experience"
     ],
     iconName: "Code2"
   },
   {
-    id: "react-native-mobile-apps",
-    name: "React Native Mobile Apps",
-    description: "Cross-platform mobile applications for iOS and Android that put your business directly into your customers' pockets.",
-    included: [
-      "Single codebase running seamlessly on iOS & Android",
-      "Smooth native gestures and responsive mobile UI",
-      "Push notifications & offline usability",
-      "App Store & Google Play readiness assistance"
-    ],
-    iconName: "Smartphone"
-  },
-  {
     id: "admin-dashboards",
     name: "Admin Dashboards",
-    description: "Intuitive command centers that give your team total real-time clarity over sales, metrics, user accounts, and operations.",
+    description: "Custom dashboards that help businesses manage products, orders, customers, payments, inventory, and other daily operations from one place.",
     included: [
-      "Real-time visual charts & operational KPIs",
-      "Customer data tables with instant search & filters",
-      "Role-based permissions & audit logging",
-      "One-click CSV/PDF report and data exports"
+      "Centralized oversight of orders, customers, and inventory",
+      "Real-time operational metrics and clear visual stats",
+      "Fast filtering, search, and bulk record management",
+      "One-click reports and structured data exports"
     ],
     iconName: "LayoutDashboard"
   },
   {
     id: "backend-api-development",
-    name: "Backend API Development",
-    description: "Reliable, secure server systems that handle your business data, protect sensitive information, and connect external services.",
+    name: "Backend & API Development",
+    description: "Secure and structured backend systems with REST APIs, database integration, authentication, and the business logic required by your application.",
     included: [
-      "High-speed, type-safe API endpoints",
-      "Secure database design with automated backups",
-      "Third-party service integrations & payment gateways",
-      "Resilient error handling and webhook listeners"
+      "Reliable REST APIs connecting web and mobile applications",
+      "Secure relational and cloud database integration",
+      "Role-based access control and data security standards",
+      "Third-party API integrations and webhook listeners"
     ],
     iconName: "Server"
   },
   {
     id: "business-automation",
     name: "Business Automation",
-    description: "Custom digital workflows that connect your software tools, eliminate repetitive manual data entry, and save your team hours.",
+    description: "Digital solutions that reduce repetitive manual work and help businesses manage their operations more efficiently.",
     included: [
-      "Automated client onboarding & email sequences",
-      "CRM, spreadsheet, and accounting tool syncing",
-      "Custom internal bots & notification webhooks",
-      "Reduced human error and faster turnaround cycles"
+      "Automated notifications, alerts, and client follow-ups",
+      "Elimination of manual, error-prone data entry",
+      "Synchronization between forms, databases, and spreadsheets",
+      "Streamlined daily business operations and team time savings"
     ],
     iconName: "Zap"
   }

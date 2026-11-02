@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { projectsData, Project } from "@/data/projects";
+import { projectsData } from "@/data/projects";
 import { personalData } from "@/data/personal";
 import { GithubIcon } from "@/components/icons";
 import {
@@ -10,14 +10,10 @@ import {
   ArrowRight,
   ExternalLink,
   CheckCircle2,
-  Calendar,
-  Layers,
-  Sparkles,
-  ShieldCheck,
-  Code2,
   Terminal,
   Zap,
-  Briefcase
+  Briefcase,
+  Monitor
 } from "lucide-react";
 
 interface ProjectPageProps {
@@ -25,6 +21,8 @@ interface ProjectPageProps {
     slug: string;
   }>;
 }
+
+export const instant = false;
 
 export async function generateStaticParams() {
   return projectsData.map((project) => ({
@@ -102,11 +100,18 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-xs hover:shadow-md transition-all"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-xs hover:shadow-md transition-all active:scale-95"
               >
-                <span>Visit Live Application</span>
+                <span>Visit Live Website</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
+            )}
+
+            {!project.liveUrl && !project.githubUrl && (
+              <div className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-100 text-slate-700 text-xs font-semibold border border-slate-200">
+                <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                <span>Live Demo &amp; Code In Development</span>
+              </div>
             )}
 
             {project.githubUrl && (
@@ -117,7 +122,19 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-slate-100 text-slate-700 text-xs font-semibold border border-slate-200 shadow-2xs transition-all"
               >
                 <GithubIcon className="w-3.5 h-3.5" />
-                <span>GitHub Repository</span>
+                <span>{project.githubBackendUrl ? "Frontend Repository" : "GitHub Repository"}</span>
+              </a>
+            )}
+
+            {project.githubBackendUrl && (
+              <a
+                href={project.githubBackendUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-slate-100 text-slate-700 text-xs font-semibold border border-slate-200 shadow-2xs transition-all"
+              >
+                <GithubIcon className="w-3.5 h-3.5" />
+                <span>Backend Repository</span>
               </a>
             )}
           </div>
@@ -125,7 +142,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
 
         {/* Featured Visual Screenshot */}
         <div className="rounded-3xl border border-slate-200/90 bg-white p-3 sm:p-5 shadow-sm overflow-hidden">
-          <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden bg-slate-100">
+          <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/60">
             <Image
               src={project.image}
               alt={`${project.title} Interface Screenshot`}
@@ -140,8 +157,8 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
         {/* 2-Column Detail Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
-          {/* Left Column: Detailed Case Study Narrative */}
-          <div className="lg:col-span-8 space-y-10">
+          {/* Left Column: Detailed Case Study Narrative with Dedicated Vertical Scroller */}
+          <div className="lg:col-span-8 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto lg:pr-3 space-y-10 scroll-smooth">
             
             {/* 1. Project Overview */}
             <section className="rounded-2xl border border-slate-200/90 bg-white p-6 sm:p-8 shadow-xs space-y-3">
@@ -180,6 +197,58 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                 </p>
               </div>
             </section>
+
+            {/* Visual Interface & Screenshots Showcase */}
+            {project.screenshots && project.screenshots.length > 0 && (
+              <section className="rounded-2xl border border-slate-200/90 bg-white p-6 sm:p-8 shadow-xs space-y-6">
+                <div>
+                  <div className="text-xs font-bold text-indigo-700 uppercase tracking-wider mb-1">
+                    Visual Walkthrough
+                  </div>
+                  <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+                    <Monitor className="w-5 h-5 text-indigo-600" />
+                    Production Interface Screenshots
+                  </h2>
+                  <p className="text-xs sm:text-sm text-slate-600 mt-1">
+                    Key user flows, responsive layouts, and catalog browsing engineered for this project.
+                  </p>
+                </div>
+
+                <div className="space-y-6">
+                  {project.screenshots.map((screen, sIdx) => (
+                    <div
+                      key={sIdx}
+                      className="rounded-xl border border-slate-200/90 overflow-hidden bg-white shadow-2xs group"
+                    >
+                      <div className="relative aspect-[16/9] w-full bg-slate-100">
+                        <Image
+                          src={screen.url}
+                          alt={screen.caption}
+                          fill
+                          className="object-cover object-top transition-transform duration-300 group-hover:scale-[1.01]"
+                          sizes="(max-width: 1200px) 100vw, 800px"
+                        />
+                      </div>
+                      <div className="p-4 bg-white border-t border-slate-100">
+                        <div className="flex items-center justify-between gap-2">
+                          <h4 className="text-sm font-bold text-slate-900">
+                            {screen.caption}
+                          </h4>
+                          <span className="text-[11px] font-mono text-slate-500 font-semibold px-2 py-0.5 rounded-md bg-slate-100 border border-slate-200/60">
+                            0{sIdx + 1} / 0{project.screenshots?.length || 0}
+                          </span>
+                        </div>
+                        {screen.description && (
+                          <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                            {screen.description}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
 
             {/* 3. Key Features */}
             <section className="rounded-2xl border border-slate-200/90 bg-white p-6 sm:p-8 shadow-xs space-y-4">
@@ -226,8 +295,8 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
 
           </div>
 
-          {/* Right Column: Project Metadata & Contact Box */}
-          <div className="lg:col-span-4 space-y-6">
+          {/* Right Column: Project Metadata & Contact Box (Sticky so it remains in view while scrolling) */}
+          <div className="lg:col-span-4 lg:sticky lg:top-24 space-y-6 self-start">
             
             {/* Tech Stack Card */}
             <div className="rounded-2xl border border-slate-200/90 bg-white p-6 shadow-xs space-y-4">

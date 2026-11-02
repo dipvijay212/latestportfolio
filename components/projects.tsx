@@ -14,7 +14,7 @@ export function Projects() {
   return (
     <section id="projects" className="py-20 md:py-28 bg-slate-50/70 border-b border-slate-200/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-semibold uppercase tracking-wider mb-3">
@@ -36,14 +36,14 @@ export function Projects() {
             return (
               <div
                 key={project.slug}
-                className="group rounded-3xl border border-slate-200/90 bg-white p-6 sm:p-8 lg:p-10 shadow-xs hover:shadow-xl hover:border-slate-300 transition-all duration-300 overflow-hidden"
+                className="group rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-8 lg:p-10 shadow-xs hover:shadow-xl hover:border-slate-300 transition-all duration-300 overflow-hidden"
               >
                 <div
                   className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center ${
                     isReversed ? "lg:grid-flow-dense" : ""
                   }`}
                 >
-                  
+
                   {/* Screenshot / Project Visual Frame */}
                   <div
                     className={`lg:col-span-7 ${
@@ -72,7 +72,7 @@ export function Projects() {
                       isReversed ? "lg:col-start-1" : ""
                     }`}
                   >
-                    
+
                     {/* Category Badge & Project Number */}
                     <div className="flex items-center justify-between">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-100">
@@ -123,12 +123,12 @@ export function Projects() {
                     </div>
 
                     {/* Actions: View Project & External Links */}
-                    <div className="pt-4 flex flex-wrap items-center gap-3">
+                    <div className="pt-4 flex flex-wrap items-center gap-2.5">
                       <Link
                         href={`/projects/${project.slug}`}
                         className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-indigo-600 text-white text-xs font-bold shadow-xs hover:shadow-md transition-all active:scale-95"
                       >
-                        <span>View Project Details</span>
+                        <span>View Details</span>
                         <ArrowRight className="w-3.5 h-3.5" />
                       </Link>
 
@@ -144,16 +144,36 @@ export function Projects() {
                         </a>
                       )}
 
+                      {!project.liveUrl && !project.githubUrl && (
+                        <span className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 text-slate-600 text-xs font-medium border border-slate-200/70">
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                          <span>Demo Coming Soon</span>
+                        </span>
+                      )}
+
                       {project.githubUrl && (
                         <a
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center gap-1.5 px-3 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition-colors"
-                          title="View GitHub Repository"
+                          title={project.githubBackendUrl ? "View Frontend Repository" : "View Source Repository"}
                         >
                           <GithubIcon className="w-3.5 h-3.5" />
-                          <span>Source</span>
+                          <span>{project.githubBackendUrl ? "Frontend" : "Source"}</span>
+                        </a>
+                      )}
+
+                      {project.githubBackendUrl && (
+                        <a
+                          href={project.githubBackendUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 px-3.5 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition-colors"
+                          title="View Backend Repository"
+                        >
+                          <GithubIcon className="w-3.5 h-3.5" />
+                          <span>Backend</span>
                         </a>
                       )}
                     </div>

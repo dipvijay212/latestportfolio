@@ -1,58 +1,176 @@
-export interface TechCategory {
-  category: string;
-  description: string;
-  skills: {
-    name: string;
-    level: string;
-    highlight: string;
-    icon?: string;
-  }[];
+export type TechCategory =
+  | "Frontend"
+  | "Backend"
+  | "Mobile"
+  | "Database"
+  | "Tools & Deployment";
+
+export interface TechItem {
+  name: string;
+  category: TechCategory;
+  role: string;
+  focus: string;
+  practicalUse: string;
 }
 
-export const techStackData: TechCategory[] = [
+export interface TechGroup {
+  category: TechCategory;
+  tagline: string;
+  description: string;
+  items: TechItem[];
+}
+
+export const techGroupsData: TechGroup[] = [
   {
-    category: "Frontend & UI",
-    description: "Modern, responsive, and accessible user interfaces built for speed.",
-    skills: [
-      { name: "React 19 / 18", level: "Expert", highlight: "Server Components, Hooks, Custom State" },
-      { name: "Next.js (App Router)", level: "Expert", highlight: "SSR, SSG, Turbopack, Edge Runtime" },
-      { name: "TypeScript", level: "Expert", highlight: "Strict typing, generics, API schemas" },
-      { name: "Tailwind CSS", level: "Expert", highlight: "Design systems, responsive tokens, fluid UI" },
-      { name: "HTML5 / Semantic a11y", level: "Expert", highlight: "Accessibility standards, SEO structure" },
-      { name: "State Management", level: "Advanced", highlight: "Zustand, React Query / TanStack, Redux" }
+    category: "Frontend",
+    tagline: "User Interfaces & Client Architecture",
+    description: "Building responsive, accessible, and high-performance interfaces with component-driven state.",
+    items: [
+      {
+        name: "React",
+        category: "Frontend",
+        role: "Component-driven user interfaces",
+        focus: "Modular architecture, hooks, lifecycle management, and reusability.",
+        practicalUse: "Web apps & dynamic dashboards"
+      },
+      {
+        name: "Next.js",
+        category: "Frontend",
+        role: "Full-stack React framework & App Router",
+        focus: "Server-side rendering (SSR), static site generation (SSG), and route handlers.",
+        practicalUse: "SEO platforms & full-stack apps"
+      },
+      {
+        name: "JavaScript",
+        category: "Frontend",
+        role: "Core web programming language",
+        focus: "ES6+ modern syntax, asynchronous control flow, and DOM event handling.",
+        practicalUse: "Core logic, algorithms & scripts"
+      },
+      {
+        name: "TypeScript",
+        category: "Frontend",
+        role: "Static typing & code reliability",
+        focus: "Strict type definitions, interfaces, API data contracts, and refactoring.",
+        practicalUse: "Type contracts & bug prevention"
+      },
+      {
+        name: "Tailwind CSS",
+        category: "Frontend",
+        role: "Utility-first design systems",
+        focus: "Rapid, responsive layouts, design token customization, and clean UI styling.",
+        practicalUse: "Responsive layouts & design tokens"
+      },
+      {
+        name: "Redux Toolkit",
+        category: "Frontend",
+        role: "Predictable global state management",
+        focus: "Centralized application state, store slices, reducers, and UI synchronization.",
+        practicalUse: "Multi-step flows & complex state"
+      }
     ]
   },
   {
-    category: "Backend & Systems",
-    description: "Robust server logic, resilient APIs, and transactional integrity.",
-    skills: [
-      { name: "Node.js & Express", level: "Advanced", highlight: "REST endpoints, async queues, middleware" },
-      { name: "Next.js Route Handlers", level: "Expert", highlight: "Server Actions, secure webhook endpoints" },
-      { name: "REST & GraphQL APIs", level: "Advanced", highlight: "Schema design, rate limiting, caching" },
-      { name: "Authentication", level: "Advanced", highlight: "NextAuth / Auth.js, Clerk, Supabase Auth, JWT" },
-      { name: "Payment Gateways", level: "Advanced", highlight: "Stripe Subscriptions, LemonSqueezy, Webhooks" }
+    category: "Backend",
+    tagline: "Server Logic & API Engineering",
+    description: "Designing fast, secure server logic, route controllers, and clean request pipelines.",
+    items: [
+      {
+        name: "Node.js",
+        category: "Backend",
+        role: "JavaScript runtime environment",
+        focus: "Asynchronous I/O execution, server processes, and backend application services.",
+        practicalUse: "Server runtimes & background tasks"
+      },
+      {
+        name: "Express.js",
+        category: "Backend",
+        role: "Minimalist server framework",
+        focus: "Modular HTTP routing, custom request middleware, and endpoint handling.",
+        practicalUse: "Microservices & REST endpoints"
+      },
+      {
+        name: "REST APIs",
+        category: "Backend",
+        role: "Structured data exchange endpoints",
+        focus: "CRUD operations, HTTP status codes, payload validation, and client integration.",
+        practicalUse: "Client-server data contracts"
+      }
     ]
   },
   {
-    category: "Databases & Storage",
-    description: "Scalable data schemas, query optimization, and secure persistent storage.",
-    skills: [
-      { name: "PostgreSQL", level: "Advanced", highlight: "Relational modeling, indexing, foreign keys" },
-      { name: "Supabase & Neon", level: "Advanced", highlight: "Serverless Postgres, real-time subscriptions" },
-      { name: "Prisma & Drizzle ORM", level: "Advanced", highlight: "Type-safe database migrations & queries" },
-      { name: "MongoDB", level: "Proficient", highlight: "Document models, aggregation pipelines" },
-      { name: "Redis / Upstash", level: "Advanced", highlight: "Caching layer, rate limiting, session storage" }
+    category: "Mobile",
+    tagline: "Cross-Platform Application Development",
+    description: "Engineering native mobile applications with shared codebases and device tooling.",
+    items: [
+      {
+        name: "React Native CLI",
+        category: "Mobile",
+        role: "Native mobile development for iOS & Android",
+        focus: "Native device tooling, cross-platform UI components, and mobile app architecture.",
+        practicalUse: "iOS & Android mobile apps"
+      }
     ]
   },
   {
-    category: "Cloud, DevOps & Tools",
-    description: "Automated delivery pipelines, continuous testing, and resilient deployments.",
-    skills: [
-      { name: "Vercel & AWS", level: "Advanced", highlight: "Edge deployments, serverless functions, S3" },
-      { name: "Git & GitHub Actions", level: "Expert", highlight: "CI/CD pipelines, code reviews, trunk workflow" },
-      { name: "Docker", level: "Proficient", highlight: "Containerized local environments & microservices" },
-      { name: "Figma to Code", level: "Expert", highlight: "1:1 pixel accuracy, token mapping" },
-      { name: "Performance & SEO", level: "Expert", highlight: "Lighthouse 95+, Core Web Vitals, metadata" }
+    category: "Database",
+    tagline: "Data Modeling & Storage Solutions",
+    description: "Managing structured schemas, transactional integrity, and scalable cloud databases.",
+    items: [
+      {
+        name: "MySQL",
+        category: "Database",
+        role: "Relational database management system",
+        focus: "Relational table schemas, foreign key constraints, indexing, and SQL queries.",
+        practicalUse: "Structured relational databases"
+      },
+      {
+        name: "Supabase",
+        category: "Database",
+        role: "Backend-as-a-service & PostgreSQL platform",
+        focus: "Managed PostgreSQL, user authentication, instant APIs, and storage buckets.",
+        practicalUse: "Postgres, auth & real-time DB"
+      },
+      {
+        name: "Sequelize",
+        category: "Database",
+        role: "Node.js Object-Relational Mapper (ORM)",
+        focus: "Database schema migrations, model definitions, validations, and table associations.",
+        practicalUse: "Database models & migrations"
+      }
+    ]
+  },
+  {
+    category: "Tools & Deployment",
+    tagline: "Version Control & Cloud Delivery",
+    description: "Maintaining clean code history, collaborative workflows, and automated deployment pipelines.",
+    items: [
+      {
+        name: "Git",
+        category: "Tools & Deployment",
+        role: "Distributed version control system",
+        focus: "Branching strategies, commit history, merge conflict resolution, and code tracking.",
+        practicalUse: "Branch workflows & code tracking"
+      },
+      {
+        name: "GitHub",
+        category: "Tools & Deployment",
+        role: "Code hosting & collaborative platform",
+        focus: "Repository management, pull requests, code reviews, and issue tracking.",
+        practicalUse: "Version control & team reviews"
+      },
+      {
+        name: "Vercel",
+        category: "Tools & Deployment",
+        role: "Cloud hosting & edge deployment platform",
+        focus: "Continuous integration from Git, preview builds, custom domains, and edge delivery.",
+        practicalUse: "CI/CD & instant edge hosting"
+      }
     ]
   }
 ];
+
+// Flattened helper array of all 16 tools
+export const allTechItems: TechItem[] = techGroupsData.flatMap(
+  (group) => group.items
+);

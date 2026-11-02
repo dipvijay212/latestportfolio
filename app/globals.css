@@ -8,6 +8,8 @@
 html {
   scroll-behavior: smooth;
   color-scheme: light;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -17,9 +19,27 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Prevent unwanted mobile iOS input zooming */
+@media screen and (max-width: 767px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
 }
 
 /* Custom subtle scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -31,6 +51,10 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -115,10 +139,12 @@ body {
   }
 }
 
+/* Accessibility: Full prefers-reduced-motion reset */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

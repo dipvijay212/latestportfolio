@@ -17,7 +17,7 @@ export default function Home() {
       {/* 1. Sticky Navigation */}
       <Navbar />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow">
         {/* 2. Hero Section */}
         <Hero />
 

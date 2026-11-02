@@ -10,6 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dipvijay.dev"),
   title: `${personalData.name} | Freelance Full-Stack Developer & Product Engineer`,
   description: `Freelancer portfolio of ${personalData.name}. I design and build production-grade web applications, SaaS MVPs, and modern frontend systems with Next.js, React, and TypeScript.`,
   keywords: [
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://example.com",
+    url: "https://dipvijay.dev",
     title: `${personalData.name} | Freelance Full-Stack Developer`,
     description: `I build fast, scalable, and high-converting web applications and SaaS MVPs. Let's work together on your next project.`,
     siteName: `${personalData.name} Portfolio`,

@@ -1,59 +1,97 @@
 export interface ProcessStep {
   step: string;
+  number: number;
   title: string;
-  subtitle: string;
+  headline: string;
   description: string;
   deliverables: string[];
   duration: string;
+  iconName: "Compass" | "Calendar" | "Palette" | "Code2" | "ShieldCheck" | "Rocket";
 }
 
 export const processStepsData: ProcessStep[] = [
   {
     step: "01",
-    title: "Discovery & Scope Blueprint",
-    subtitle: "Understanding your vision and setting crystal clear boundaries",
-    description: "We start with a focused kickoff call to clarify your core objectives, target users, and key features. I distill this into an actionable sprint breakdown with fixed milestones and zero guesswork.",
+    number: 1,
+    title: "Discovery",
+    headline: "We discuss your idea, business requirements, target users, and goals.",
+    description: "We discuss your idea, business requirements, target users, and goals.",
     deliverables: [
-      "Target feature list & technical scope doc",
-      "Architecture & database schema plan",
-      "Milestone timeline & guaranteed delivery date"
+      "Idea & business requirements",
+      "Target user definition",
+      "Project goals & scope boundaries"
     ],
-    duration: "2-3 Days"
+    duration: "Step 01",
+    iconName: "Compass"
   },
   {
     step: "02",
-    title: "Design Translation & Core Architecture",
-    subtitle: "Setting up solid foundations and clickable wireframes",
-    description: "I set up the production Next.js repository, configure design tokens with Tailwind CSS, establish authentication and database models, and build out early interactive staging routes.",
+    number: 2,
+    title: "Planning",
+    headline: "I define the required features, technology, architecture, and development approach.",
+    description: "I define the required features, technology, architecture, and development approach.",
     deliverables: [
-      "Staging environment URL for live previews",
-      "Foundational database models & API schemas",
-      "Initial component design system"
+      "Feature breakdown & roadmap",
+      "System architecture & database",
+      "Technology & development approach"
     ],
-    duration: "Week 1"
+    duration: "Step 02",
+    iconName: "Calendar"
   },
   {
     step: "03",
-    title: "Iterative Build & Weekly Previews",
-    subtitle: "High-velocity development with complete transparency",
-    description: "Every feature is built with clean TypeScript and modular components. You receive weekly video walk-throughs and staging links to test real functionality as each sprint wraps up.",
+    number: 3,
+    title: "UI/UX",
+    headline: "I design the user experience and interface before turning it into a working product.",
+    description: "I design the user experience and interface before turning it into a working product.",
     deliverables: [
-      "Continuous staging deployments",
-      "Weekly milestone progress reports",
-      "Direct async Slack or email check-ins"
+      "Responsive layout wireframes",
+      "Interface styling & tokens",
+      "User flows & navigation design"
     ],
-    duration: "Weeks 2-4"
+    duration: "Step 03",
+    iconName: "Palette"
   },
   {
     step: "04",
-    title: "QA, Production Launch & Handoff",
-    subtitle: "Polishing to perfection, deploying live, and full code handover",
-    description: "We run comprehensive cross-device tests, optimize Core Web Vitals, configure custom domains and SSL, and hand over 100% intellectual property with full documentation and a 30-day warranty.",
+    number: 4,
+    title: "Development",
+    headline: "I build the frontend, backend, database, APIs, and required integrations.",
+    description: "I build the frontend, backend, database, APIs, and required integrations.",
     deliverables: [
-      "Production deployment with zero downtime",
-      "Codebase documentation & recorded walkthrough",
-      "30-day post-launch warranty & bug-fix guarantee"
+      "Frontend & backend implementation",
+      "Database schema & REST APIs",
+      "Required third-party integrations"
     ],
-    duration: "Launch Week"
+    duration: "Step 04",
+    iconName: "Code2"
+  },
+  {
+    step: "05",
+    number: 5,
+    title: "Testing",
+    headline: "I test important user flows, responsiveness, functionality, and edge cases.",
+    description: "I test important user flows, responsiveness, functionality, and edge cases.",
+    deliverables: [
+      "Important user flows validation",
+      "Cross-device responsiveness check",
+      "Functionality & edge cases testing"
+    ],
+    duration: "Step 05",
+    iconName: "ShieldCheck"
+  },
+  {
+    step: "06",
+    number: 6,
+    title: "Deployment",
+    headline: "I deploy the application and help prepare it for real users.",
+    description: "I deploy the application and help prepare it for real users.",
+    deliverables: [
+      "Production deployment & hosting",
+      "Domain setup & environment check",
+      "Preparation for real user traffic"
+    ],
+    duration: "Step 06",
+    iconName: "Rocket"
   }
 ];
